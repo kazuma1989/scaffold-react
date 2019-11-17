@@ -3,13 +3,22 @@
   "version": "0.0.1",
   "author": "kazuma1989 <kazuma.ebina@quipper.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "tsc": "tsc"
+  },
   "browserslist": [
     "last 1 Chrome versions"
   ],
-  "scripts": {
-    "watch": "parcel ./src/index.html",
-    "check-type": "tsc"
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.2"
+  }
 }
