@@ -1,0 +1,15 @@
+{
+  "name": "scaffold-react",
+  "version": "0.0.1",
+  "author": "kazuma1989 <kazuma.ebina@quipper.com>",
+  "license": "MIT",
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "scripts": {
+    "watch": "parcel ./src/index.html",
+    "check-type": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
