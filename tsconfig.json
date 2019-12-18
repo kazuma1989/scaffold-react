@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    // Target
+    "target": "ES2019",
 
     // Required for dynamic import.
-    "module": "esnext",
+    "module": "ESNext",
 
     // Some packages need this option.
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
 
-    // For `import React from "react"` instead of `import * as React from "react"`.
+    // "import React" instead of "import * as React"
     "allowSyntheticDefaultImports": true,
 
     // Required for Parcel with JSX.
