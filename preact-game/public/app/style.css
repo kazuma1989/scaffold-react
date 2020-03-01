@@ -1,0 +1,24 @@
+:root {
+  --black: #000000;
+  --gray170: #292827;
+  --gray150: #3b3a39;
+  --gray120: #797775;
+  --gray50: #d2d0ce;
+  --gray20: #f3f2f1;
+  --white: #ffffff;
+
+  --red10: #d13438;
+  --cyanBlue10: #0078d4;
+}
+
+:root {
+  /* https://devhints.io/css-system-font-stack */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  font-weight: 900;
+  font-size: 10vmin;
+  line-height: 1.6;
+  color: var(--gray150);
+}

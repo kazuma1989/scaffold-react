@@ -1,0 +1,3 @@
+{
+  "webDependencies": ["csz", "immer", "preact", "preact/hooks", "redux"]
+}

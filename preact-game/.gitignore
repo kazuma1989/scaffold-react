@@ -1,0 +1,10 @@
+*.log
+
+.vscode/settings.json
+
+.firebase/
+node_modules/
+web_modules/
+
+/public/app/dist
+/public/app/sw.js

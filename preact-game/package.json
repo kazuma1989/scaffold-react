@@ -1,0 +1,35 @@
+{
+  "name": "preact-game",
+  "version": "0.0.1",
+  "author": "kazuma1989 <kazuma.ebina@quipper.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "snowpack --optimize --clean --dest ./public/app/web_modules/",
+    "start": "concurrently npm:server npm:compile-watch",
+    "build": "concurrently npm:compile",
+    "test": "tsc",
+    "compile": "tsc --project ./tsconfig-build.json --outDir ./public/app/dist",
+    "compile-watch": "npm run compile -- --watch",
+    "server": "live-server --quiet ./public",
+    "format": "prettier --write './src/**/*.{ts,tsx,js}' './public/**/*.{css,html}'",
+    "lint-fix": "eslint --fix './src/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "csz": "^1.2.0",
+    "immer": "^5.3.6",
+    "preact": "^10.3.2",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "live-server": "^1.2.1",
+    "prettier": "^1.19.1",
+    "snowpack": "^1.5.1",
+    "typescript": "^3.8.3"
+  }
+}

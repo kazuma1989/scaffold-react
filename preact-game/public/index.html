@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja" class="cover-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>DOCUMENT TITLE</title>
+    <meta name="description" content="DESCRIPTION" />
+
+    <base href="/" />
+
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://unpkg.com/ress@2.0.4/dist/ress.min.css"
+    />
+    <link rel="stylesheet" href="/app/style.css" />
+    <style>
+      :root {
+        font-weight: initial;
+        font-size: initial;
+      }
+      a {
+        color: var(--cyanBlue10);
+      }
+      img {
+        max-width: 100%;
+      }
+      p {
+        margin: 1em 5vw 0;
+      }
+
+      .cover-screen {
+        width: 100%;
+        height: 100%;
+      }
+
+      .centering {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+      }
+
+      .h1 {
+        margin-top: 1em;
+      }
+      .h2 {
+        margin-top: 2em;
+      }
+
+      .developer-avatar {
+        width: 180px;
+        height: 180px;
+        margin: 0.5em;
+        border-radius: 50%;
+      }
+
+      .credit-view-icon {
+        width: 50%;
+        margin: 0.5em;
+      }
+      .credit-view-text {
+        text-align: center;
+      }
+
+      .spacer {
+        margin-top: 25vh;
+      }
+      .app-start-button-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        padding: 3vmin;
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+      }
+      .app-start-button {
+        background-color: var(--cyanBlue10);
+        color: var(--white);
+        font-size: 10vmin;
+        font-weight: 900;
+        text-decoration: none;
+        text-align: center;
+
+        display: block;
+        padding: 4vmin;
+        border-radius: 2vmin;
+
+        width: 9em;
+      }
+    </style>
+  </head>
+
+  <body class="cover-screen centering">
+    <h1 class="h1">GAME TITLE</h1>
+    <p>GAME DESCRIPTION</p>
+
+    <h2 class="h2">お問い合わせ</h2>
+    <p>kazuma.ebina@quipper.com</p>
+
+    <h2 class="h2">開発者</h2>
+    <img
+      class="developer-avatar"
+      alt="GitHub avatar"
+      src="https://avatars1.githubusercontent.com/u/15844862?s=460&v=4"
+    />
+    <p>kazuma1989 🦐</p>
+    <p>
+      <a href="https://github.com/kazuma1989" target="_blank" rel="noopener"
+        >GitHub</a
+      >
+      /
+      <a href="https://qiita.com/kazuma1989" target="_blank" rel="noopener"
+        >Qiita</a
+      >
+      /
+      <a
+        href="https://www.linkedin.com/in/kazuma1989/"
+        target="_blank"
+        rel="noopener"
+        >LinkedIn</a
+      >
+    </p>
+
+    <hr class="spacer" />
+    <div class="app-start-button-container">
+      <a class="app-start-button" href="/app/">遊んでみる!</a>
+    </div>
+  </body>
+</html>
